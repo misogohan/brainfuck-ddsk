@@ -36,9 +36,9 @@ function App() {
     <div className="App">
       <h1>DDSK in Brainfuck!</h1>
       <textarea spellCheck="false" className="code" value={code} onChange={onCodeChange} onKeyDown={cse}/>
-      <div className="output">
+      <div className="left">
         <nav><button className="run" onClick={run}>Run</button></nav>
-        <pre>{ output }</pre>
+        <pre className="output"><code>{ output }</code></pre>
       </div>
     </div>
   )

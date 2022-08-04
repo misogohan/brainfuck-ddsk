@@ -25,21 +25,25 @@
   resize: none;
 }
 .code:focus { outline: none; }
-.output {
+.left {
   padding-inline-start: .5rem;
   display: flex;
   flex-direction: column;
   gap: .5rem;
 }
-.output > pre {
-  display: block;
+.output {
   flex-grow: 1;
   padding: .25rem;
+  overflow-wrap: anywhere;
+  overflow-y: auto;
+  height: 0;
+
   background-color: black;
   white-space: break-spaces;
-  overflow-wrap: anywhere;
   font-size: 13px;
   line-height: 1.2;
+}
+.output > code {
 }
 .run {
   border: none;
@@ -49,3 +53,11 @@
   cursor: pointer;
 }
 
+@media (prefers-color-scheme: light) {
+  .code, .output {
+    background-color: white;
+  }
+  .run {
+    background-color: #DDD;
+  }
+}
