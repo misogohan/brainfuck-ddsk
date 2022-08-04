@@ -32,11 +32,12 @@
   flex-direction: column;
   gap: .5rem;
 }
-.output > code {
+.output > pre {
   display: block;
   flex-grow: 1;
   padding: .25rem;
   background-color: black;
+  white-space: break-spaces;
   overflow-wrap: anywhere;
   font-size: 13px;
   line-height: 1.2;
