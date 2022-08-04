@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/webfonts/JetBrainsMono-Regular.woff2");
+}
+:root {
+  font-family: JetBrainsMono;
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: white;
+  background-color: #111;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  font-family: JetBrainsMono;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.5;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: black;
+    background-color: #EEE;
+  }
+}

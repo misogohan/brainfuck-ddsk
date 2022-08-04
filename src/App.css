@@ -1,0 +1,51 @@
+#root {
+}
+.App {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr 17rem;
+  padding: .5rem 0;
+
+}
+.App > h1 {
+  writing-mode: sideways-lr;
+  text-align: end;
+}
+.code {
+  box-sizing: border-box;
+  height: 100%;
+  border: none;
+  padding: .25em;
+  background-color: black;
+  font-size: 13px;
+  line-height: 1.2;
+  font-variant-ligatures: none;
+
+  resize: none;
+}
+.code:focus { outline: none; }
+.output {
+  padding-inline-start: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.output > code {
+  display: block;
+  flex-grow: 1;
+  padding: .25rem;
+  background-color: black;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  line-height: 1.2;
+}
+.run {
+  border: none;
+  padding: 0 1rem;
+  line-height: 2;
+  background-color: #222;
+  cursor: pointer;
+}
+
