@@ -10,8 +10,7 @@
 
 }
 .App > h1 {
-  writing-mode: sideways-lr;
-  text-align: end;
+  writing-mode: vertical-rl;
 }
 .code {
   box-sizing: border-box;
